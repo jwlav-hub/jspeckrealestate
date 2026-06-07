@@ -192,25 +192,26 @@ p:last-child { margin-bottom: 0; }
   background: var(--navy);
   box-shadow: 0 2px 16px rgba(0,0,0,.3);
 }
-/* At top of page over hero — darken text for legibility against the photo */
-.site-header.at-top .nav-logo-name,
-.site-header.at-top .nav-logo-pipe {
+/* At top of page over hero — darken text for legibility against the photo.
+   Only applies on pages WITH a hero (not .no-hero). */
+body:not(.no-hero) .site-header.at-top .nav-logo-name,
+body:not(.no-hero) .site-header.at-top .nav-logo-pipe {
   color: var(--navy);
   transition: color .35s ease;
 }
-.site-header.at-top .nav-logo-city {
+body:not(.no-hero) .site-header.at-top .nav-logo-city {
   color: var(--blue-dark);
   transition: color .35s ease;
 }
-.site-header.at-top .nav-links a:not(.btn-primary) {
+body:not(.no-hero) .site-header.at-top .nav-links a:not(.btn-primary) {
   color: var(--navy);
   transition: color .2s, background .2s;
 }
-.site-header.at-top .nav-links a:not(.btn-primary):hover {
+body:not(.no-hero) .site-header.at-top .nav-links a:not(.btn-primary):hover {
   color: var(--navy);
   background: rgba(30,58,95,.1);
 }
-.site-header.at-top .nav-toggle span {
+body:not(.no-hero) .site-header.at-top .nav-toggle span {
   background: var(--navy);
 }
 .nav-inner {
