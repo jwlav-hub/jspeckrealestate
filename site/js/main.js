@@ -4,6 +4,7 @@
 (function () {
   const header = document.querySelector('.site-header');
   if (!header) return;
+  const hasHero = !document.body.classList.contains('no-hero');
   const threshold = 20;
   function update() {
     if (window.scrollY > threshold) {
@@ -11,11 +12,12 @@
       header.classList.remove('at-top');
     } else {
       header.classList.remove('scrolled');
-      header.classList.add('at-top');
+      // Only apply dark text treatment on pages with a hero photo behind the nav
+      if (hasHero) header.classList.add('at-top');
     }
   }
   window.addEventListener('scroll', update, { passive: true });
-  update(); // run on load in case page is already scrolled
+  update();
 })();
 
 /* ---- Mobile nav ---- */
