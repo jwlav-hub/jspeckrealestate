@@ -1,0 +1,14 @@
+# Clean URL redirects — strip .html from incoming URLs
+/buyers          /buyers.html          200
+/sellers         /sellers.html         200
+/investors       /investors.html       200
+/mortgage-broker /mortgage-broker.html 200
+/communities     /communities.html     200
+/about           /about.html           200
+/contact         /contact.html         200
+/media           /media.html           200
+/vendors         /vendors.html         200
+/property-search /property-search.html 200
+
+# 404 fallback
+/*               /index.html           404

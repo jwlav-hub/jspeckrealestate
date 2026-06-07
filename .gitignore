@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Claude Code internals
+.claude/
+
+# Reference / working docs (not part of the deployed site)
+Reference/
+JSpeck_RealEstate_Website_Spec.md
