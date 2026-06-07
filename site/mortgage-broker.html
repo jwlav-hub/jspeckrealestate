@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mortgage Broker | Jeff Peck Real Estate Las Vegas</title>
+  <meta name="description" content="Apply for a mortgage, estimate your monthly payment with our calculator, and get answers to the top 20 mortgage questions — with Las Vegas licensed Loan Broker Jeff Peck.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; }
+    @media(max-width:768px){ .calc-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body class="no-hero">
+
+<header class="site-header" role="banner">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo"><span class="nav-logo-name">Jeffrey S. Peck Real Estate</span><span class="nav-logo-pipe" aria-hidden="true">|</span><span class="nav-logo-city">Las Vegas</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="property-search.html" class="nav-has-dropdown">Services <span class="nav-chevron" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown">
+          <a href="property-search.html">Search Homes</a>
+          <a href="buyers.html">Buyers Guide</a>
+          <a href="sellers.html">Sellers Guide</a>
+          <a href="investors.html">Investors Guide</a>
+          <a href="mortgage-broker.html">Mortgage Broker</a>
+          <a href="sellers.html#valuation">Instant Home Valuation</a>
+          <a href="sellers.html#cash">Sell for Cash (7–10 Days)</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="media.html" class="nav-has-dropdown">Media <span class="nav-chevron" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown">
+          <a href="media.html#webinars">Upcoming Webinars</a>
+          <a href="media.html#shorts">60-Second Videos</a>
+          <a href="media.html#past-webinars">Past Webinars</a>
+          <a href="media.html#tours">Neighborhood Tours</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="communities.html" class="nav-has-dropdown">Resources <span class="nav-chevron" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown">
+          <a href="communities.html">Communities &amp; Neighborhoods</a>
+          <a href="communities.html#schools">School Ratings</a>
+          <a href="communities.html#safety">Safety Data</a>
+          <a href="vendors.html">Vendor Directory</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="about.html" class="nav-has-dropdown">About <span class="nav-chevron" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown">
+          <a href="about.html">About Jeff</a>
+          <a href="about.html#reviews">Reviews</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <a href="sellers.html#valuation" class="btn btn-primary btn-sm">Get My Home Value</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMobile"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
+  <a href="property-search.html">🔍 Services</a>
+  <a href="property-search.html" class="nav-mobile-sub">Search Homes</a>
+  <a href="buyers.html" class="nav-mobile-sub">Buyers Guide</a>
+  <a href="sellers.html" class="nav-mobile-sub">Sellers Guide</a>
+  <a href="investors.html" class="nav-mobile-sub">Investors Guide</a>
+  <a href="mortgage-broker.html" class="nav-mobile-sub">Mortgage Broker</a>
+  <a href="sellers.html#valuation" class="nav-mobile-sub">Instant Home Valuation</a>
+  <a href="sellers.html#cash" class="nav-mobile-sub">Sell for Cash</a>
+  <a href="media.html">▶️ Media</a>
+  <a href="media.html#webinars" class="nav-mobile-sub">Upcoming Webinars</a>
+  <a href="media.html#shorts" class="nav-mobile-sub">60-Second Videos</a>
+  <a href="media.html#past-webinars" class="nav-mobile-sub">Past Webinars</a>
+  <a href="media.html#tours" class="nav-mobile-sub">Neighborhood Tours</a>
+  <a href="communities.html">📚 Resources</a>
+  <a href="communities.html" class="nav-mobile-sub">Communities &amp; Neighborhoods</a>
+  <a href="communities.html#schools" class="nav-mobile-sub">School Ratings</a>
+  <a href="vendors.html" class="nav-mobile-sub">Vendor Directory</a>
+  <a href="about.html">👤 About</a>
+  <a href="about.html#reviews" class="nav-mobile-sub">Reviews</a>
+  <a href="contact.html" class="nav-mobile-sub">Contact</a>
+  <a href="sellers.html#valuation" class="btn btn-primary">Get My Home Value</a>
+</nav>
+
+<!-- Page Hero Banner -->
+<section class="hero-page" aria-label="Mortgage Broker">
+  <div class="hero-bg" role="img" aria-label="Las Vegas skyline"></div>
+  <div class="container">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Licensed Loan Broker</p>
+      <h1>Mortgage Broker<br><em>Services</em></h1>
+      <p class="hero-sub">Apply for financing, estimate your payment, and get your mortgage questions answered — all in one place.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 1: APPLY FOR A MORTGAGE ===== -->
+<section class="page-start section" id="apply" aria-labelledby="apply-heading">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center;">
+      <div>
+        <div class="section-heading">
+          <p class="eyebrow">Financing</p>
+          <h2 id="apply-heading">Apply for a Mortgage</h2>
+          <p>As a licensed Loan Broker, Jeff can connect you with the right lender and financing product for your situation — whether you're buying your first home or your tenth investment property.</p>
+        </div>
+        <a href="contact.html" class="btn btn-primary btn-lg" id="apply-link">Apply for a Mortgage →</a>
+        <p class="form-note" style="margin-top:.75rem;">NMLS # [TBD] · Equal Housing Lender</p>
+      </div>
+      <div style="background:var(--cream); border-radius:var(--radius-lg); padding:2rem; border:1.5px solid var(--gray-200);">
+        <h4 style="margin-bottom:1rem;">What Jeff Can Help With</h4>
+        <ul style="display:flex; flex-direction:column; gap:.75rem;">
+          <li style="display:flex; gap:.75rem; align-items:flex-start;"><span style="color:var(--gold); font-weight:700;">✓</span><span>Conventional, FHA, VA &amp; USDA loans</span></li>
+          <li style="display:flex; gap:.75rem; align-items:flex-start;"><span style="color:var(--gold); font-weight:700;">✓</span><span>First-time homebuyer programs &amp; down payment assistance</span></li>
+          <li style="display:flex; gap:.75rem; align-items:flex-start;"><span style="color:var(--gold); font-weight:700;">✓</span><span>Investment property &amp; portfolio financing</span></li>
+          <li style="display:flex; gap:.75rem; align-items:flex-start;"><span style="color:var(--gold); font-weight:700;">✓</span><span>Jumbo loans for luxury properties</span></li>
+          <li style="display:flex; gap:.75rem; align-items:flex-start;"><span style="color:var(--gold); font-weight:700;">✓</span><span>Rate comparisons across multiple lenders</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 2: MORTGAGE CALCULATOR ===== -->
+<section class="section--cream section" id="calculator" aria-labelledby="calc-heading">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Planning Tool</p>
+      <h2 id="calc-heading">Mortgage Calculator</h2>
+      <p>Estimate your monthly payment including principal &amp; interest, taxes, insurance, and PMI.</p>
+    </div>
+    <div class="calc-grid">
+      <form id="mortgageCalc" aria-label="Mortgage payment calculator" novalidate>
+        <div class="grid-2">
+          <div class="form-group">
+            <label class="form-label" for="calcPrice">Home Price ($)</label>
+            <input class="form-control" type="number" id="calcPrice" value="500000" min="50000" step="5000">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="calcDown">Down Payment (%)</label>
+            <input class="form-control" type="number" id="calcDown" value="20" min="0" max="100" step="0.5">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="calcRate">Interest Rate (%)</label>
+            <input class="form-control" type="number" id="calcRate" value="7.0" min="0.1" max="20" step="0.125">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="calcTerm">Loan Term (years)</label>
+            <select class="form-control" id="calcTerm">
+              <option value="30" selected>30 Years</option>
+              <option value="20">20 Years</option>
+              <option value="15">15 Years</option>
+              <option value="10">10 Years</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="calcTax">Annual Property Tax ($)</label>
+            <input class="form-control" type="number" id="calcTax" value="4800" min="0" step="100">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="calcInsurance">Annual Home Insurance ($)</label>
+            <input class="form-control" type="number" id="calcInsurance" value="1800" min="0" step="100">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="calcPmi">PMI Rate (% if &lt;20% down)</label>
+          <input class="form-control" type="number" id="calcPmi" value="0.5" min="0" max="3" step="0.1">
+          <p class="form-note">PMI only applies when down payment is less than 20%.</p>
+        </div>
+      </form>
+      <div>
+        <div class="calc-result" aria-live="polite" aria-label="Monthly payment result">
+          <div class="label">Estimated Monthly Payment</div>
+          <div class="amount" id="calcResult">$0</div>
+          <div class="calc-breakdown">
+            <div class="calc-breakdown-item">
+              <div class="value" id="calcPI">—</div>
+              <div class="label">Principal &amp; Interest</div>
+            </div>
+            <div class="calc-breakdown-item">
+              <div class="value" id="calcTaxMonth">—</div>
+              <div class="label">Property Tax</div>
+            </div>
+            <div class="calc-breakdown-item">
+              <div class="value" id="calcInsMonth">—</div>
+              <div class="label">Insurance</div>
+            </div>
+            <div class="calc-breakdown-item">
+              <div class="value" id="calcPmiMonth">—</div>
+              <div class="label">PMI</div>
+            </div>
+          </div>
+          <div style="margin-top:1.25rem; font-size:.8rem; color:rgba(255,255,255,.5); border-top:1px solid rgba(255,255,255,.1); padding-top:1rem;">Loan Amount: <strong id="calcLoanAmt" style="color:var(--gold-light);">—</strong></div>
+        </div>
+        <div style="margin-top:1.25rem; padding:1.25rem; background:var(--white); border-radius:var(--radius-lg); border:1px solid var(--gray-200);">
+          <p style="font-size:.875rem; color:var(--text-light); margin:0;">This calculator provides estimates only. Contact Jeff for a personalized pre-approval and lender recommendation. Rates subject to change.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 3: TOP 20 MORTGAGE Q&A ===== -->
+<section class="section" id="faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="section-heading section-heading--center">
+      <p class="eyebrow">Know Before You Go</p>
+      <h2 id="faq-heading">Top 20 Mortgage Questions &amp; Answers</h2>
+      <p>The most common questions buyers ask when applying for a mortgage — answered clearly.</p>
+    </div>
+    <div style="max-width: 760px; margin: 0 auto;">
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">What credit score do I need to qualify for a mortgage? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">Most conventional loans require a minimum score of 620, while FHA loans can go as low as 580 (or 500 with a 10% down payment). A higher score (720+) unlocks the best interest rates. Jeff can connect you with lenders who work with a range of credit profiles.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">How much do I need for a down payment? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">Down payment requirements vary by loan type. Conventional loans can be as low as 3%, FHA loans require 3.5%, and VA/USDA loans can be 0% for eligible buyers. Putting 20% down eliminates private mortgage insurance (PMI) and reduces your monthly payment.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">What's the difference between pre-qualification and pre-approval? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">Pre-qualification is an informal estimate based on self-reported information. Pre-approval is a formal review of your credit, income, and assets — resulting in a conditional commitment letter. Sellers and their agents take pre-approval far more seriously, especially in a competitive Las Vegas market.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">What documents do I need to apply? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">Typically: last 2 years of tax returns and W-2s, last 30 days of pay stubs, last 2–3 months of bank statements, photo ID, and a list of current debts. Self-employed buyers will also need profit &amp; loss statements. Having these ready speeds up the process significantly.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">How does my debt-to-income ratio (DTI) affect approval? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">DTI compares your monthly debt payments to your gross monthly income. Most lenders prefer a DTI under 43%. A lower DTI means you can qualify for a larger loan or a better rate. Jeff can help you review your DTI and strategies to improve it before applying.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">What are closing costs and how much should I expect? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">Closing costs typically range from 2%–5% of the loan amount and include lender fees, title insurance, escrow fees, prepaid taxes and insurance, and other charges. In Nevada, closing costs for a $500,000 home might be $10,000–$25,000. Some of these can be negotiated or rolled into the loan.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">Should I choose a fixed-rate or adjustable-rate mortgage (ARM)? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">A fixed-rate mortgage locks in your interest rate for the life of the loan — predictable and ideal if you plan to stay long-term. An ARM starts at a lower rate but adjusts after an initial period (e.g., 5/1 ARM). ARMs can make sense if you plan to move or refinance within a few years.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">What is PMI and how do I avoid it? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">Private Mortgage Insurance (PMI) protects the lender if you default and is required when your down payment is less than 20%. It typically costs 0.3%–1.5% of the loan annually. You can avoid PMI by putting 20% down, using a piggyback loan, or requesting cancellation once you reach 20% equity.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">What is an escrow account? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">An escrow account is managed by your lender and holds funds for property taxes and homeowner's insurance. Each month, a portion of your payment goes into escrow; the lender pays your tax and insurance bills from it. This ensures those obligations are always covered.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">How long does the mortgage process take? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">From application to closing typically takes 30–45 days, though it can be as fast as 21 days with a prepared buyer and responsive team. The timeline depends on the lender, the complexity of your financial situation, and how quickly documentation is submitted.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">Can I buy a home if I'm self-employed? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">Yes. Self-employed buyers typically need 2 years of tax returns showing consistent income, along with a year-to-date profit &amp; loss statement. Some lenders offer bank-statement loans that use average deposits rather than tax returns — useful if your write-offs reduce reported income.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">What happens if I'm denied a mortgage? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">The lender is required to provide an adverse action notice explaining why. Common reasons include low credit score, high DTI, insufficient income, or property issues. Many buyers successfully re-apply after improving their credit, paying down debt, or saving a larger down payment. Jeff can help you map a path forward.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">Do I need to be a U.S. citizen to get a mortgage? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">No. Permanent residents (green card holders) can access the same loan programs as citizens. Non-permanent residents can still qualify for FHA loans with a valid work authorization. Foreign nationals have additional options through non-QM lenders. Jeff can connect you with the right lender for your status.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">What is an appraisal and why does it matter? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">A licensed appraiser will assess the home's market value. Lenders require appraisals to confirm they're not lending more than the home is worth. If the appraisal comes in low, you'll need to renegotiate the price, pay the difference in cash, or walk away. A strong offer strategy from Jeff helps avoid this issue.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">Should I lock my interest rate? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">A rate lock guarantees your interest rate for a set period (typically 30–60 days) while your loan is processed. It protects you from rate increases before closing. If rates are volatile or rising, locking early makes sense. Jeff and your loan officer can advise on timing.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">What is a home inspection and is it required? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">A home inspection is a professional evaluation of the property's condition. It's not legally required in Nevada, but it's strongly recommended. Inspections can reveal costly issues — roof, foundation, HVAC, plumbing — that can be used to renegotiate or request repairs before closing.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">What is title insurance and do I need it? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">Title insurance protects you and your lender against ownership disputes, liens, or errors in public records related to the property. Lender's title insurance is almost always required. Owner's title insurance is optional but highly recommended — it's a one-time premium paid at closing.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">Can I use gift money for a down payment? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">Yes, with conditions. Gift funds from family members are acceptable for most loan types, but lenders require a gift letter confirming no repayment is expected. There are also paper-trail requirements showing the funds transferred from the donor's account. Let Jeff's lending team guide you through the documentation.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">How does buying affect my taxes? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">Homeownership can provide tax benefits including the mortgage interest deduction and property tax deduction (subject to IRS limits). Nevada has no state income tax, which is a significant advantage. Consult a CPA for personalized advice — Jeff can refer you to trusted tax professionals in the valley.</div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">What are first-time homebuyer programs available in Nevada? <span class="accordion-icon">+</span></button>
+        <div class="accordion-body">Nevada Housing Division (NHD) offers the Home Is Possible program with below-market rates and down payment assistance grants. There are also programs for teachers, first responders, and low-to-moderate income buyers. These programs can save thousands — ask Jeff if you qualify when you connect.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><span class="nav-logo-name">Jeffrey S. Peck Real Estate</span><span class="nav-logo-pipe" aria-hidden="true">|</span><span class="nav-logo-city">Las Vegas</span></a>
+        <p>Licensed REALTOR, Broker &amp; Loan Broker serving the Greater Las Vegas Valley.</p>
+      </div>
+      <div class="footer-col"><h5>Buyers &amp; Sellers</h5><ul>
+        <li><a href="property-search.html">Search Homes</a></li>
+        <li><a href="buyers.html">Buyer Resources</a></li>
+        <li><a href="sellers.html">Sell My Home</a></li>
+        <li><a href="sellers.html#valuation">Home Valuation</a></li>
+        <li><a href="mortgage-broker.html">Mortgage Broker</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Resources</h5><ul>
+        <li><a href="investors.html">Investors</a></li>
+        <li><a href="communities.html">Communities</a></li>
+        <li><a href="media.html">Media &amp; Videos</a></li>
+        <li><a href="vendors.html">Vendor Directory</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Company</h5><ul>
+        <li><a href="about.html">About Jeff</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-legal">
+        <div class="eho-mark" role="img" aria-label="Equal Housing Opportunity"><div class="eho-box" aria-hidden="true">⌂</div>Equal Housing Opportunity</div>
+        <span class="footer-license">Nevada RE License # [TBD] · NMLS # [TBD]</span>
+      </div>
+      <p>© 2026 Jeff Peck Real Estate. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta" aria-label="Quick actions">
+  <a href="tel:+17025550100" class="btn btn-outline-light">📞 Call Jeff</a>
+  <a href="#apply" class="btn btn-primary">Apply for Mortgage</a>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

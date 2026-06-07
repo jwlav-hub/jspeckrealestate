@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media & Videos | Jeff Peck Real Estate Las Vegas</title>
+  <meta name="description" content="Watch Jeff Peck's 60-second real estate tips, past webinar recordings, neighborhood drone tours, and reserve your seat at the next Tuesday 7PM live webinar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .webinar-date-card {
+      background: var(--white);
+      border: 1.5px solid var(--gray-200);
+      border-left: 4px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .webinar-date-card .date { font-weight: 700; color: var(--navy); }
+    .webinar-date-card .topic { font-size: .875rem; color: var(--text-light); }
+  </style>
+</head>
+<body class="no-hero">
+
+<header class="site-header" role="banner">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo"><span class="nav-logo-name">Jeffrey S. Peck Real Estate</span><span class="nav-logo-pipe" aria-hidden="true">|</span><span class="nav-logo-city">Las Vegas</span></a>
+            <nav class="nav-links" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="property-search.html" class="nav-has-dropdown">Services <span class="nav-chevron" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown">
+          <a href="property-search.html">Search Homes</a>
+          <a href="buyers.html">Buyers Guide</a>
+          <a href="sellers.html">Sellers Guide</a>
+          <a href="investors.html">Investors Guide</a>
+          <a href="mortgage-broker.html">Mortgage Broker</a>
+          <a href="sellers.html#valuation">Instant Home Valuation</a>
+          <a href="sellers.html#cash">Sell for Cash (7–10 Days)</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="media.html" class="nav-has-dropdown">Media <span class="nav-chevron" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown">
+          <a href="media.html#webinars">Upcoming Webinars</a>
+          <a href="media.html#shorts">60-Second Videos</a>
+          <a href="media.html#past-webinars">Past Webinars</a>
+          <a href="media.html#tours">Neighborhood Tours</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="communities.html" class="nav-has-dropdown">Resources <span class="nav-chevron" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown">
+          <a href="communities.html">Communities &amp; Neighborhoods</a>
+          <a href="communities.html#schools">School Ratings</a>
+          <a href="communities.html#safety">Safety Data</a>
+          <a href="vendors.html">Vendor Directory</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="about.html" class="nav-has-dropdown">About <span class="nav-chevron" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown">
+          <a href="about.html">About Jeff</a>
+          <a href="about.html#reviews">Reviews</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <a href="sellers.html#valuation" class="btn btn-primary btn-sm">Get My Home Value</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMobile"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
+  <a href="property-search.html">🔍 Services</a>
+  <a href="property-search.html" class="nav-mobile-sub">Search Homes</a>
+  <a href="buyers.html" class="nav-mobile-sub">Buyers Guide</a>
+  <a href="sellers.html" class="nav-mobile-sub">Sellers Guide</a>
+  <a href="investors.html" class="nav-mobile-sub">Investors Guide</a>
+  <a href="mortgage-broker.html" class="nav-mobile-sub">Mortgage Broker</a>
+  <a href="sellers.html#valuation" class="nav-mobile-sub">Instant Home Valuation</a>
+  <a href="sellers.html#cash" class="nav-mobile-sub">Sell for Cash</a>
+  <a href="media.html">▶️ Media</a>
+  <a href="media.html#webinars" class="nav-mobile-sub">Upcoming Webinars</a>
+  <a href="media.html#shorts" class="nav-mobile-sub">60-Second Videos</a>
+  <a href="media.html#past-webinars" class="nav-mobile-sub">Past Webinars</a>
+  <a href="media.html#tours" class="nav-mobile-sub">Neighborhood Tours</a>
+  <a href="communities.html">📚 Resources</a>
+  <a href="communities.html" class="nav-mobile-sub">Communities &amp; Neighborhoods</a>
+  <a href="communities.html#schools" class="nav-mobile-sub">School Ratings</a>
+  <a href="vendors.html" class="nav-mobile-sub">Vendor Directory</a>
+  <a href="about.html">👤 About</a>
+  <a href="about.html#reviews" class="nav-mobile-sub">Reviews</a>
+  <a href="contact.html" class="nav-mobile-sub">Contact</a>
+  <a href="sellers.html#valuation" class="btn btn-primary">Get My Home Value</a>
+</nav>
+  </div>
+</div>
+
+<!-- Upcoming Webinars -->
+<section class="page-start section" id="webinars" aria-labelledby="webinar-heading">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:start;">
+      <div>
+        <div class="section-heading">
+          <p class="eyebrow">Live Every Tuesday</p>
+          <h2 id="webinar-heading">Upcoming Webinars</h2>
+          <p>Join Jeff live every Tuesday at 7:00 PM for market updates, Q&amp;A, buyer/seller tips, and expert guests. Free to attend — reserve your seat now.</p>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:.75rem; margin-bottom:2rem;" role="list" aria-label="Upcoming webinar dates">
+          <div class="webinar-date-card" role="listitem">
+            <div><div class="date">Tuesday, July 8, 2026 · 7:00 PM PT</div><div class="topic">Las Vegas Market Update: Summer 2026</div></div>
+            <a href="#reserve" class="btn btn-primary btn-sm">Reserve Seat</a>
+          </div>
+          <div class="webinar-date-card" role="listitem">
+            <div><div class="date">Tuesday, July 15, 2026 · 7:00 PM PT</div><div class="topic">First-Time Buyer Q&amp;A: Your Questions Answered</div></div>
+            <a href="#reserve" class="btn btn-primary btn-sm">Reserve Seat</a>
+          </div>
+          <div class="webinar-date-card" role="listitem">
+            <div><div class="date">Tuesday, July 22, 2026 · 7:00 PM PT</div><div class="topic">Investment Property Strategies in Nevada</div></div>
+            <a href="#reserve" class="btn btn-primary btn-sm">Reserve Seat</a>
+          </div>
+          <div class="webinar-date-card" role="listitem">
+            <div><div class="date">Tuesday, July 29, 2026 · 7:00 PM PT</div><div class="topic">Selling in 2026: Pricing, Staging &amp; Timing</div></div>
+            <a href="#reserve" class="btn btn-primary btn-sm">Reserve Seat</a>
+          </div>
+        </div>
+
+        <div class="banner">
+          <strong>Never miss a session:</strong> Reserve once and receive automatic calendar invites for all future Tuesday webinars.
+        </div>
+      </div>
+
+      <!-- Reserve Form -->
+      <div id="reserve">
+        <form class="lead-form" aria-label="Webinar reservation form" action="#" method="post">
+          <h3>Reserve My Seat</h3>
+          <p>Your reservation adds the event to your Google Calendar, notifies Jeff, and enrolls you for future session reminders.</p>
+          <div class="form-group">
+            <label class="form-label" for="web-name">Full Name</label>
+            <input class="form-control" type="text" id="web-name" name="name" placeholder="Jane Smith" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="web-phone">Cell Number</label>
+            <input class="form-control" type="tel" id="web-phone" name="phone" placeholder="(702) 555-0100" required autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="web-email">Email Address</label>
+            <input class="form-control" type="email" id="web-email" name="email" placeholder="you@email.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="web-date">Select Session</label>
+            <select class="form-control" id="web-date" name="session">
+              <option value="">Choose a date</option>
+              <option>July 8 — Las Vegas Market Update</option>
+              <option>July 15 — First-Time Buyer Q&amp;A</option>
+              <option>July 22 — Investment Property Strategies</option>
+              <option>July 29 — Selling in 2026</option>
+            </select>
+          </div>
+          <div class="form-consent">
+            <input type="checkbox" id="web-consent" name="consent_sms">
+            <label for="web-consent">I agree to receive webinar reminders and marketing texts &amp; emails from Jeff Peck Real Estate. Reply STOP to unsubscribe. <a href="contact.html#privacy" style="color:var(--gold-light);">Privacy Policy</a></label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Reserve My Seat</button>
+          <p style="font-size:.75rem; color:rgba(255,255,255,.5); margin-top:.75rem; text-align:center;">
+            CRM/calendar integration pending — reservations will be processed manually until then.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 60-second videos -->
+<section class="section--cream section" id="shorts" aria-labelledby="shorts-heading">
+  <div class="container">
+    <div class="section-heading section-heading--center">
+      <p class="eyebrow">Quick Tips</p>
+      <h2 id="shorts-heading">60-Second Real Estate Videos</h2>
+      <p>Short-form video content aggregated from YouTube, Facebook, Instagram, TikTok, and more.</p>
+    </div>
+    <div class="coming-soon" style="margin-bottom:2rem;">
+      <div class="coming-soon-icon">📱</div>
+      <span class="coming-soon-badge">Integration Pending</span>
+      <h3>Video Gallery</h3>
+      <p>Jeff's short-form videos from YouTube, Instagram Reels, Facebook, and TikTok will populate this gallery automatically. A social aggregation embed (e.g., Curator.io or custom API pulls) will feed new content as it's posted.</p>
+    </div>
+    <!-- Placeholder grid to show layout intent -->
+    <div class="grid-4">
+      <div class="video-thumb" style="cursor:default;" aria-label="Video placeholder 1">
+        <div style="position:absolute; bottom:.75rem; left:.75rem; background:rgba(0,0,0,.65); color:var(--white); font-size:.75rem; padding:.2rem .6rem; border-radius:999px;">0:58</div>
+      </div>
+      <div class="video-thumb" style="cursor:default;" aria-label="Video placeholder 2">
+        <div style="position:absolute; bottom:.75rem; left:.75rem; background:rgba(0,0,0,.65); color:var(--white); font-size:.75rem; padding:.2rem .6rem; border-radius:999px;">1:02</div>
+      </div>
+      <div class="video-thumb" style="cursor:default;" aria-label="Video placeholder 3">
+        <div style="position:absolute; bottom:.75rem; left:.75rem; background:rgba(0,0,0,.65); color:var(--white); font-size:.75rem; padding:.2rem .6rem; border-radius:999px;">0:55</div>
+      </div>
+      <div class="video-thumb" style="cursor:default;" aria-label="Video placeholder 4">
+        <div style="position:absolute; bottom:.75rem; left:.75rem; background:rgba(0,0,0,.65); color:var(--white); font-size:.75rem; padding:.2rem .6rem; border-radius:999px;">1:00</div>
+      </div>
+    </div>
+    <p class="text-center text-sm" style="color:var(--gray-400); margin-top:1rem;">Placeholder thumbnails shown above — live videos will replace these once the social integration is configured.</p>
+  </div>
+</section>
+
+<!-- Past Webinars -->
+<section class="section" id="past-webinars" aria-labelledby="past-heading">
+  <div class="container">
+    <div class="section-heading section-heading--center">
+      <p class="eyebrow">On-Demand</p>
+      <h2 id="past-heading">Past Webinar Recordings</h2>
+      <p>Missed a session? Catch up on 90-minute past webinars on demand.</p>
+    </div>
+    <div class="coming-soon">
+      <div class="coming-soon-icon">🎬</div>
+      <span class="coming-soon-badge">Coming Soon</span>
+      <h3>Webinar Archive</h3>
+      <p>Past 90-minute webinar recordings will be hosted here. Enter your email to get notified when the archive goes live and receive links to all past sessions.</p>
+      <form style="display:flex; gap:.75rem; width:100%; max-width:380px;" action="#" method="post" aria-label="Webinar notification signup">
+        <input class="form-control" type="email" placeholder="your@email.com" required style="flex:1;">
+        <button type="submit" class="btn btn-primary">Notify Me</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Neighborhood Tours -->
+<section class="section--dark section" id="tours" aria-labelledby="tours-media-heading">
+  <div class="container">
+    <div class="section-heading section-heading--center">
+      <p class="eyebrow">Explore Las Vegas</p>
+      <h2 id="tours-media-heading" style="color:var(--white)">Neighborhood Video Tours</h2>
+      <p style="color:rgba(255,255,255,.7);">Drone footage and ground-level walkthroughs of Las Vegas's best neighborhoods.</p>
+    </div>
+    <div class="coming-soon" style="background:rgba(255,255,255,.05); border-color:rgba(255,255,255,.1);">
+      <div class="coming-soon-icon">🚁</div>
+      <span class="coming-soon-badge">Coming Soon</span>
+      <h3 style="color:var(--white);">Drone &amp; Video Tours</h3>
+      <p style="color:rgba(255,255,255,.65);">Professional drone and standard video tours of Summerlin, Henderson, Green Valley, Mountains Edge, and more. Videos will embed from Jeff's YouTube channel as they're published.</p>
+    </div>
+    <div class="text-center" style="margin-top:2rem;">
+      <a href="communities.html" class="btn btn-outline-light">Explore Neighborhood Guides</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><span class="nav-logo-name">Jeffrey S. Peck Real Estate</span><span class="nav-logo-pipe" aria-hidden="true">|</span><span class="nav-logo-city">Las Vegas</span></a>
+        <p>Licensed REALTOR, Broker &amp; Loan Broker serving the Greater Las Vegas Valley.</p>
+      </div>
+      <div class="footer-col"><h5>Buyers &amp; Sellers</h5><ul>
+        <li><a href="property-search.html">Search Homes</a></li>
+        <li><a href="buyers.html">Buyer Resources</a></li>
+        <li><a href="sellers.html">Sell My Home</a></li>
+        <li><a href="sellers.html#valuation">Home Valuation</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Resources</h5><ul>
+        <li><a href="investors.html">Investors</a></li>
+        <li><a href="communities.html">Communities</a></li>
+        <li><a href="media.html">Media &amp; Videos</a></li>
+        <li><a href="vendors.html">Vendor Directory</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Company</h5><ul>
+        <li><a href="about.html">About Jeff</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-legal">
+        <div class="eho-mark" role="img" aria-label="Equal Housing Opportunity"><div class="eho-box" aria-hidden="true">⌂</div>Equal Housing Opportunity</div>
+        <span class="footer-license">Nevada RE License # [TBD] · NMLS # [TBD]</span>
+      </div>
+      <p>© 2026 Jeff Peck Real Estate. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta" aria-label="Quick actions">
+  <a href="#reserve" class="btn btn-outline-light">📅 Reserve Webinar</a>
+  <a href="contact.html" class="btn btn-primary">Contact Jeff</a>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeff Peck Real Estate | Las Vegas Luxury Homes & Real Estate</title>
+  <meta name="description" content="Jeff Peck — licensed REALTOR, Broker & Loan Broker serving the Las Vegas Valley. Search MLS listings, get your home's value, and connect with a trusted local expert.">
+  <meta name="keywords" content="Las Vegas real estate, Las Vegas homes for sale, luxury homes Nevada, Jeff Peck realtor, Henderson homes, Summerlin real estate">
+  <link rel="canonical" href="https://www.jspeckrealestate.com/">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jeff Peck Real Estate | Las Vegas">
+  <meta property="og:description" content="30+ years serving Las Vegas buyers, sellers & investors. Search homes, get your value, schedule a consultation.">
+  <meta property="og:url" content="https://www.jspeckrealestate.com/">
+  <meta property="og:type" content="website">
+  <!-- Schema.org local business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Jeff Peck Real Estate",
+    "url": "https://www.jspeckrealestate.com",
+    "telephone": "TBD",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Las Vegas",
+      "addressRegion": "NV",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Las Vegas", "Henderson", "Summerlin", "North Las Vegas", "Nevada"]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Home-specific styles */
+    .stats-bar { background: var(--navy); padding: 1.5rem 0; border-top: 3px solid var(--blue); }
+    .stats-bar .container { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 1rem; }
+    .stats-bar .stat .value { color: var(--blue-light); font-size: 2rem; }
+    .stats-bar .stat .label { color: rgba(255,255,255,.65); }
+
+    .listings-strip { padding: 4rem 0; }
+    .listings-placeholder { background: var(--cream); border-radius: var(--radius-lg); min-height: 280px; display: flex; align-items: center; justify-content: center; border: 2px dashed var(--gray-200); }
+
+    .reviews-carousel { overflow: hidden; position: relative; }
+    .reviews-track { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" role="banner">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Jeff Peck Real Estate — Home">
+      <span class="nav-logo-name">Jeffrey S. Peck Real Estate</span><span class="nav-logo-pipe" aria-hidden="true">|</span><span class="nav-logo-city">Las Vegas</span>
+    </a>
+            <nav class="nav-links" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="property-search.html" class="nav-has-dropdown">Services <span class="nav-chevron" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown">
+          <a href="property-search.html">Search Homes</a>
+          <a href="buyers.html">Buyers Guide</a>
+          <a href="sellers.html">Sellers Guide</a>
+          <a href="investors.html">Investors Guide</a>
+          <a href="mortgage-broker.html">Mortgage Broker</a>
+          <a href="sellers.html#valuation">Instant Home Valuation</a>
+          <a href="sellers.html#cash">Sell for Cash (7–10 Days)</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="media.html" class="nav-has-dropdown">Media <span class="nav-chevron" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown">
+          <a href="media.html#webinars">Upcoming Webinars</a>
+          <a href="media.html#shorts">60-Second Videos</a>
+          <a href="media.html#past-webinars">Past Webinars</a>
+          <a href="media.html#tours">Neighborhood Tours</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="communities.html" class="nav-has-dropdown">Resources <span class="nav-chevron" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown">
+          <a href="communities.html">Communities &amp; Neighborhoods</a>
+          <a href="communities.html#schools">School Ratings</a>
+          <a href="communities.html#safety">Safety Data</a>
+          <a href="vendors.html">Vendor Directory</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="about.html" class="nav-has-dropdown">About <span class="nav-chevron" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown">
+          <a href="about.html">About Jeff</a>
+          <a href="about.html#reviews">Reviews</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <a href="sellers.html#valuation" class="btn btn-primary btn-sm">Get My Home Value</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMobile">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
+  <a href="property-search.html">🔍 Services</a>
+  <a href="property-search.html" class="nav-mobile-sub">Search Homes</a>
+  <a href="buyers.html" class="nav-mobile-sub">Buyers Guide</a>
+  <a href="sellers.html" class="nav-mobile-sub">Sellers Guide</a>
+  <a href="investors.html" class="nav-mobile-sub">Investors Guide</a>
+  <a href="mortgage-broker.html" class="nav-mobile-sub">Mortgage Broker</a>
+  <a href="sellers.html#valuation" class="nav-mobile-sub">Instant Home Valuation</a>
+  <a href="sellers.html#cash" class="nav-mobile-sub">Sell for Cash</a>
+  <a href="media.html">▶️ Media</a>
+  <a href="media.html#webinars" class="nav-mobile-sub">Upcoming Webinars</a>
+  <a href="media.html#shorts" class="nav-mobile-sub">60-Second Videos</a>
+  <a href="media.html#past-webinars" class="nav-mobile-sub">Past Webinars</a>
+  <a href="media.html#tours" class="nav-mobile-sub">Neighborhood Tours</a>
+  <a href="communities.html">📚 Resources</a>
+  <a href="communities.html" class="nav-mobile-sub">Communities &amp; Neighborhoods</a>
+  <a href="communities.html#schools" class="nav-mobile-sub">School Ratings</a>
+  <a href="vendors.html" class="nav-mobile-sub">Vendor Directory</a>
+  <a href="about.html">👤 About</a>
+  <a href="about.html#reviews" class="nav-mobile-sub">Reviews</a>
+  <a href="contact.html" class="nav-mobile-sub">Contact</a>
+  <a href="sellers.html#valuation" class="btn btn-primary">Get My Home Value</a>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" aria-label="Hero">
+  <div class="hero-bg" role="img" aria-label="Luxury Nevada home exterior"></div>
+  <div class="container">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Las Vegas & Greater Nevada</p>
+      <h1>Where Great Properties Meet<br><em>the Right Buyers</em></h1>
+      <p class="hero-sub">Discover curated listings in prime locations. Built for agencies, developers, and real estate professionals who want to move faster.</p>
+      <div class="hero-ctas">
+        <a href="property-search.html" class="btn btn-primary btn-lg">Search Homes</a>
+        <a href="sellers.html#valuation" class="btn btn-outline-light btn-lg">Get My Home Value</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS BAR ===== -->
+<div class="stats-bar" aria-label="Key statistics">
+  <div class="container">
+    <div class="stat"><span class="value">$1B+</span><div class="label">In Transactions</div></div>
+    <div class="stat"><span class="value">5★</span><div class="label">Client Rated</div></div>
+    <div class="stat"><span class="value">7–10</span><div class="label">Day Cash Closes</div></div>
+  </div>
+</div>
+
+<!-- ===== QUICK-ACCESS TILES ===== -->
+<section class="section--cream section" aria-labelledby="tiles-heading">
+  <div class="container">
+    <div class="section-heading section-heading--center">
+      <p class="eyebrow">How Can I Help You?</p>
+      <h2 id="tiles-heading">Your Las Vegas Real Estate Resource</h2>
+      <p>Whether you're a first-time buyer or seasoned investor, Jeff has the tools, connections, and local expertise to make it happen.</p>
+    </div>
+    <div class="tiles-grid" role="list">
+
+      <!-- Webinar — tall, dark, spans 2 rows -->
+      <a href="media.html#webinars" class="tile tile-webinar" role="listitem">
+        <div class="tile-webinar-badge">Live Every Tuesday · 7:00 PM PT</div>
+        <h3>Weekly Webinars</h3>
+        <p>Join Jeff live every Tuesday evening for an in-depth look at the Las Vegas real estate market — no fluff, just straight talk on what buyers and sellers need to know right now.</p>
+        <ul class="tile-webinar-list">
+          <li>Current market conditions &amp; pricing trends</li>
+          <li>Buyer &amp; seller Q&amp;A — ask Jeff anything</li>
+          <li>Investment &amp; landlord strategies</li>
+          <li>Mortgage rate updates &amp; financing tips</li>
+          <li>Past recordings available on demand</li>
+        </ul>
+        <span class="tile-arrow tile-arrow--light">Reserve My Seat →</span>
+      </a>
+
+      <!-- Regular tiles -->
+      <a href="buyers.html" class="tile" role="listitem">
+        <h3>Buyers</h3>
+        <p>MLS search, mortgage calculator, neighborhood guides &amp; mortgage Q&amp;A.</p>
+        <span class="tile-arrow">Explore →</span>
+      </a>
+      <a href="sellers.html" class="tile" role="listitem">
+        <h3>Sellers</h3>
+        <p>Instant home valuation, cash offer option, and listing consultations.</p>
+        <span class="tile-arrow">Explore →</span>
+      </a>
+      <a href="investors.html" class="tile" role="listitem">
+        <h3>Investors</h3>
+        <p>Landlord guidance, investment strategy, and portfolio consultations.</p>
+        <span class="tile-arrow">Explore →</span>
+      </a>
+      <a href="sellers.html#valuation" class="tile" role="listitem">
+        <h3>Home Valuation</h3>
+        <p>Get your instant equity estimate and understand your home's current market value.</p>
+        <span class="tile-arrow">Get Value →</span>
+      </a>
+      <a href="communities.html" class="tile" role="listitem">
+        <h3>Communities</h3>
+        <p>Neighborhood guides, school ratings, safety data, and local resources.</p>
+        <span class="tile-arrow">Explore →</span>
+      </a>
+      <a href="media.html#shorts" class="tile" role="listitem">
+        <h3>Media Gallery</h3>
+        <p>60-second market tips, neighborhood drone tours, and past webinar recordings — all in one place.</p>
+        <span class="tile-arrow">Watch Now →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURED LISTINGS ===== -->
+<section class="listings-strip section" aria-labelledby="listings-heading">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Current Inventory</p>
+      <h2 id="listings-heading">Featured Properties</h2>
+      <p>Live MLS listings updated in real time from the Greater Las Vegas MLS.</p>
+    </div>
+    <div class="listings-placeholder" role="region" aria-label="IDX listings feed">
+      <div class="coming-soon">
+        <div class="coming-soon-icon">🏡</div>
+        <span class="coming-soon-badge">Integration Pending</span>
+        <h3>Live MLS Listings</h3>
+        <p>IDX feed from GLVAR/LVR will display here. Powered by an approved IDX vendor with interactive map search and saved-search alerts.</p>
+        <a href="property-search.html" class="btn btn-outline-navy">View All Properties</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT JEFF (HOME SNAPSHOT) ===== -->
+<!-- ===== ABOUT + LEAD CAPTURE (consolidated) ===== -->
+<section class="section--blue-overlay section" id="contact-home" aria-labelledby="about-heading-home">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;">
+
+      <!-- Left: About + contact prompt -->
+      <div>
+        <div class="section-heading" style="margin-bottom:1.5rem;">
+          <p class="eyebrow" style="color:var(--blue-light);">About Jeff Peck</p>
+          <h2 id="about-heading-home" style="color:var(--white);">Las Vegas's Most Trusted Real Estate Expert</h2>
+          <p style="color:rgba(255,255,255,.8);">Jeff Peck brings a rare combination of licenses as a REALTOR, Broker, and Loan Broker. From luxury properties to first-time buyers — Jeff delivers results with integrity. Whether you're ready to buy, sell, or just exploring, he's here to answer every question.</p>
+        </div>
+        <div class="accreditations-list" style="margin-bottom:1.75rem; flex-wrap:wrap; gap:.6rem;">
+          <span class="accreditation-badge" style="background:rgba(255,255,255,.12);color:var(--white);border-color:rgba(255,255,255,.25);">Licensed REALTOR® &amp; Broker</span>
+          <span class="accreditation-badge" style="background:rgba(255,255,255,.12);color:var(--white);border-color:rgba(255,255,255,.25);">Licensed Salesperson</span>
+          <span class="accreditation-badge" style="background:rgba(255,255,255,.12);color:var(--white);border-color:rgba(255,255,255,.25);">Licensed Builder</span>
+          <span class="accreditation-badge" style="background:rgba(255,255,255,.12);color:var(--white);border-color:rgba(255,255,255,.25);">Life Insurance Licensed</span>
+          <span class="accreditation-badge" style="background:rgba(255,255,255,.12);color:var(--white);border-color:rgba(255,255,255,.25);">Certified in Negotiations</span>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-bottom:2rem;">
+          <div class="stat"><span class="value">5</span><div class="label">Active Licenses</div></div>
+          <div class="stat"><span class="value">100s</span><div class="label">5-Star Reviews</div></div>
+          <div class="stat"><span class="value">7–10</span><div class="label">Day Cash Close</div></div>
+        </div>
+        <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="about.html" class="btn btn-primary">Meet Jeff</a>
+          <a href="contact.html" class="btn btn-outline-light">Contact Us</a>
+        </div>
+      </div>
+
+      <!-- Right: Contact form (white card) -->
+      <form class="lead-form" aria-label="Contact form" action="#" method="post" style="background:var(--white); border-radius:var(--radius-lg); padding:2.5rem;">
+        <h3 style="color:var(--navy);">Get in Touch</h3>
+        <p style="color:var(--text-light); font-size:.9rem; margin-bottom:1.5rem;">No obligation — Jeff responds personally within hours.</p>
+        <div class="form-group">
+          <label class="form-label" style="color:var(--gray-800);" for="lead-name">Full Name <span aria-hidden="true">*</span></label>
+          <input class="form-control" type="text" id="lead-name" name="name" placeholder="Jane Smith" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label class="form-label" style="color:var(--gray-800);" for="lead-phone">Cell Number <span aria-hidden="true">*</span></label>
+          <input class="form-control" type="tel" id="lead-phone" name="phone" placeholder="(702) 555-0100" required autocomplete="tel">
+        </div>
+        <div class="form-group">
+          <label class="form-label" style="color:var(--gray-800);" for="lead-email">Email Address <span aria-hidden="true">*</span></label>
+          <input class="form-control" type="email" id="lead-email" name="email" placeholder="you@email.com" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label class="form-label" style="color:var(--gray-800);" for="lead-interest">I'm interested in…</label>
+          <select class="form-control" id="lead-interest" name="interest">
+            <option value="">Select one</option>
+            <option value="buying">Buying a Home</option>
+            <option value="selling">Selling My Home</option>
+            <option value="investing">Investing in Real Estate</option>
+            <option value="cash">Fast Cash Sale</option>
+            <option value="mortgage">Mortgage / Financing</option>
+            <option value="other">General Inquiry</option>
+          </select>
+        </div>
+        <div class="form-consent" style="color:var(--text-light);">
+          <input type="checkbox" id="consent-sms" name="consent_sms">
+          <label for="consent-sms">I agree to receive marketing texts &amp; emails from Jeff Peck Real Estate. Reply STOP to unsubscribe. <a href="contact.html#privacy" style="color:var(--blue);">Privacy Policy</a></label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send My Info</button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="section" aria-labelledby="reviews-heading">
+  <div class="container">
+    <div class="section-heading section-heading--center">
+      <p class="eyebrow">Client Reviews</p>
+      <h2 id="reviews-heading">What Clients Are Saying</h2>
+    </div>
+    <div class="reviews-track" role="list">
+      <article class="review-card" role="listitem">
+        <div class="review-stars" aria-label="5 stars">★★★★★</div>
+        <p class="review-text">"Jeff was absolutely incredible from start to finish. He found us our dream home in Summerlin and made the whole process seamless. Couldn't recommend him more highly!"</p>
+        <div class="review-author">Michael &amp; Sarah T.</div>
+        <div class="review-source">Google Review</div>
+      </article>
+      <article class="review-card" role="listitem">
+        <div class="review-stars" aria-label="5 stars">★★★★★</div>
+        <p class="review-text">"As a first-time investor, I was nervous, but Jeff walked me through every step. His knowledge of the Las Vegas market is unmatched. Closed on two properties this year!"</p>
+        <div class="review-author">David R.</div>
+        <div class="review-source">Zillow Review</div>
+      </article>
+      <article class="review-card" role="listitem">
+        <div class="review-stars" aria-label="5 stars">★★★★★</div>
+        <p class="review-text">"We needed to sell fast and Jeff delivered — closed in 8 days! Fair cash price, zero stress, and Jeff was in contact every single day. Truly exceptional service."</p>
+        <div class="review-author">Jennifer K.</div>
+        <div class="review-source">Google Review</div>
+      </article>
+    </div>
+    <div class="text-center" style="margin-top:2.5rem;">
+      <a href="about.html#reviews" class="btn btn-outline-navy">Read All Reviews</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="nav-logo-name">Jeff Peck</span>
+          <span class="nav-logo-tagline">Real Estate · Las Vegas</span>
+        </a>
+        <p>Licensed REALTOR, Broker &amp; Loan Broker serving the Greater Las Vegas Valley. Your trusted partner for buying, selling, and investing in Nevada real estate.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Buyers &amp; Sellers</h5>
+        <ul>
+          <li><a href="property-search.html">Search Homes</a></li>
+          <li><a href="buyers.html">Buyer Resources</a></li>
+          <li><a href="sellers.html">Sell My Home</a></li>
+          <li><a href="sellers.html#valuation">Home Valuation</a></li>
+          <li><a href="sellers.html#cash">Sell for Cash</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="investors.html">Investors</a></li>
+          <li><a href="communities.html">Communities</a></li>
+          <li><a href="media.html">Media &amp; Videos</a></li>
+          <li><a href="vendors.html">Vendor Directory</a></li>
+          <li><a href="media.html#webinars">Weekly Webinars</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Jeff</a></li>
+          <li><a href="about.html#reviews">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#privacy">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-legal">
+        <div class="eho-mark" role="img" aria-label="Equal Housing Opportunity">
+          <div class="eho-box" aria-hidden="true">⌂</div>
+          Equal Housing Opportunity
+        </div>
+        <span class="footer-license">Nevada RE License # [TBD] · NMLS # [TBD]</span>
+      </div>
+      <p>© 2026 Jeff Peck Real Estate. All rights reserved. | www.jspeckrealestate.com</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobile CTA -->
+<div class="sticky-cta" aria-label="Quick actions">
+  <a href="tel:+17025550100" class="btn btn-outline-light">📞 Call Jeff</a>
+  <a href="sellers.html#valuation" class="btn btn-primary">Get My Value</a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
