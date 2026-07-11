@@ -448,17 +448,17 @@ body:not(.no-hero) .site-header.at-top .nav-toggle span {
    ---------------------------------------------------------- */
 .hero {
   position: relative;
-  /* 17:9 landscape ratio; nav height offset preserved */
-  height: calc(52.94vw - var(--nav-h));
-  min-height: 340px;
-  max-height: 72vh;
+  /* Wide cinematic ratio, but tall enough that content clears the fixed nav */
+  height: 58vw;
+  min-height: 560px;
+  max-height: 88vh;
   display: flex;
   align-items: center;
   overflow: hidden;
   background: var(--navy);
   /* extend behind the fixed transparent nav */
   margin-top: calc(-1 * var(--nav-h));
-  padding-top: var(--nav-h);
+  padding-top: calc(var(--nav-h) + 1.5rem);
 }
 .hero-bg {
   position: absolute;
