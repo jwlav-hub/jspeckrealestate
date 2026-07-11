@@ -7,38 +7,40 @@
    1. Variables & Reset
    ---------------------------------------------------------- */
 :root {
-  /* Blues — primary palette */
-  --blue:        #2196f3;
-  --blue-dark:   #1565c0;
-  --blue-light:  #64b5f6;
-  --navy:        #1e3a5f;   /* footer / dark sections */
-  --navy-mid:    #152d4a;   /* footer bottom strip */
-  --navy-light:  #2a4f7c;   /* hover states */
-  --blue-overlay: rgba(26, 54, 93, 0.58); /* transparent blue section */
-  --blue-tint:   #eaf4fb;   /* card / testimonial backgrounds */
+  /* Luxury palette — deep navy + champagne gold + warm neutrals.
+     --blue* aliases kept for legacy refs but remapped to the gold accent
+     so every component pulls from one coherent system. */
+  --blue:        #b8963e;
+  --blue-dark:   #9a7c2e;
+  --blue-light:  #d6bc76;
+  --navy:        #142c47;   /* footer / dark sections */
+  --navy-mid:    #0e2035;   /* footer bottom strip */
+  --navy-light:  #23446b;   /* hover states */
+  --blue-overlay: rgba(14, 32, 53, 0.78); /* dark section wash */
+  --blue-tint:   #f8f5ee;   /* card / testimonial backgrounds — warm ivory */
 
-  /* Keep gold as a subtle warm accent for a few highlights */
-  --gold:        #2196f3;   /* remapped to blue */
-  --gold-light:  #64b5f6;
+  /* Champagne gold accent */
+  --gold:        #b8963e;
+  --gold-light:  #d6bc76;
 
-  /* Neutrals */
-  --cream:       #f4f8fb;   /* slightly blue-white page bg */
+  /* Neutrals — warm, not blue-tinged */
+  --cream:       #f7f5f0;   /* warm ivory page bg */
   --white:       #ffffff;
-  --gray-100:    #f0f4f8;
-  --gray-200:    #e2e8f0;
-  --gray-400:    #94a3b8;
-  --gray-600:    #64748b;
-  --gray-800:    #1e293b;
-  --text:        #1e293b;
-  --text-light:  #475569;
+  --gray-100:    #f2f0eb;
+  --gray-200:    #e5e1d8;
+  --gray-400:    #9a958a;
+  --gray-600:    #6b6659;
+  --gray-800:    #23282e;
+  --text:        #23282e;
+  --text-light:  #565b60;
 
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans:  'Inter', system-ui, sans-serif;
 
-  --radius:     6px;
-  --radius-lg:  12px;
-  --shadow:     0 2px 12px rgba(33,150,243,.08);
-  --shadow-lg:  0 8px 40px rgba(30,58,95,.18);
+  --radius:     4px;
+  --radius-lg:  10px;
+  --shadow:     0 2px 16px rgba(20,30,45,.07);
+  --shadow-lg:  0 16px 48px rgba(14,32,53,.16);
 
   --max-width:  1200px;
   --nav-h:      82px;
@@ -133,11 +135,18 @@ p:last-child { margin-bottom: 0; }
 .btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 
 .btn-primary {
-  background: var(--blue);
-  color: var(--white);
-  border-color: var(--blue);
+  background: linear-gradient(160deg, #c5a349 0%, var(--gold) 60%, #a8872f 100%);
+  color: #10233b;
+  border-color: transparent;
+  letter-spacing: .02em;
+  box-shadow: 0 2px 12px rgba(184,150,62,.35);
 }
-.btn-primary:hover { background: var(--blue-dark); border-color: var(--blue-dark); }
+.btn-primary:hover {
+  background: linear-gradient(160deg, #d0b05a 0%, #c2a04a 60%, #b3923c 100%);
+  border-color: transparent;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(184,150,62,.45);
+}
 
 .btn-outline-light {
   background: transparent;
@@ -266,8 +275,15 @@ body:not(.no-hero) .site-header.at-top .nav-toggle span {
 }
 .nav-links a:hover,
 .nav-links a.active { color: var(--white); background: rgba(255,255,255,.1); }
-.nav-links a.btn-primary { color: var(--white); background: var(--blue); border-color: var(--blue); }
-.nav-links a.btn-primary:hover { background: var(--blue-dark); border-color: var(--blue-dark); }
+.nav-links a.btn-primary {
+  color: #10233b;
+  background: linear-gradient(160deg, #c5a349 0%, var(--gold) 60%, #a8872f 100%);
+  border-color: transparent;
+}
+.nav-links a.btn-primary:hover {
+  background: linear-gradient(160deg, #d0b05a 0%, #c2a04a 60%, #b3923c 100%);
+  border-color: transparent;
+}
 
 /* Dropdown items */
 .nav-item { position: relative; }
@@ -317,7 +333,7 @@ body:not(.no-hero) .site-header.at-top .nav-toggle span {
   padding-left: 2.25rem !important;
   font-size: .8125rem !important;
   color: rgba(255,255,255,.6) !important;
-  border-left: 2px solid rgba(33,150,243,.4);
+  border-left: 2px solid rgba(184,150,62,.45);
   margin-left: .75rem;
 }
 .nav-mobile-sub:hover { color: var(--blue-light) !important; }
@@ -446,25 +462,41 @@ body:not(.no-hero) .site-header.at-top .nav-toggle span {
 }
 .hero-bg {
   position: absolute;
-  inset: 0;
+  inset: -4% -6%;   /* bleed so the flyover pan never exposes edges */
   background-image: url('../images/hero-lasvegas.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  animation: hero-flyover 42s ease-in-out infinite alternate;
+  will-change: transform;
+}
+/* Cinematic drone-glide over the Strip */
+@keyframes hero-flyover {
+  0%   { transform: scale(1)    translate(0, 0); }
+  100% { transform: scale(1.16) translate(-2.5%, -1.8%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg { animation: none; }
 }
 .hero-bg::after {
-  /* no full-image tint — overlay is scoped to text box only */
-  content: none;
+  /* soft vignette for depth — keeps photo unobstructed */
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10,18,30,.42) 0%, rgba(10,18,30,0) 32%),
+              linear-gradient(to bottom, rgba(10,18,30,.28) 0%, rgba(10,18,30,0) 22%);
 }
 .hero-content {
   position: relative;
   z-index: 1;
-  max-width: 420px;
-  background: rgba(30, 58, 95, 0.72);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  max-width: 440px;
+  background: rgba(14, 32, 53, 0.78);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(214,188,118,.28);
   border-radius: var(--radius-lg);
-  padding: 1.25rem 1.5rem;
+  padding: 1.75rem 2rem;
+  box-shadow: 0 24px 60px rgba(8,16,28,.45);
 }
 .hero-eyebrow {
   display: inline-flex;
@@ -484,9 +516,9 @@ body:not(.no-hero) .site-header.at-top .nav-toggle span {
   height: 2px;
   background: var(--gold);
 }
-.hero h1 { color: var(--white); margin-bottom: .75rem; font-size: clamp(1.5rem, 3.5vw, 2.5rem); }
-.hero h1 em { color: var(--gold); font-style: normal; }
-.hero-sub { font-size: .9375rem; color: rgba(255,255,255,.75); margin-bottom: 1.5rem; max-width: 380px; }
+.hero h1 { color: var(--white); margin-bottom: .75rem; font-size: clamp(1.6rem, 3.6vw, 2.6rem); letter-spacing: .01em; }
+.hero h1 em { color: var(--gold-light); font-style: italic; }
+.hero-sub { font-size: .9375rem; color: rgba(255,255,255,.82); margin-bottom: 1.5rem; max-width: 380px; line-height: 1.7; }
 .hero-eyebrow { margin-bottom: .75rem; }
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; }
 
@@ -806,7 +838,7 @@ body:not(.no-hero) .site-header.at-top .nav-toggle span {
   border-radius: var(--radius-lg);
   padding: 1.75rem;
   box-shadow: var(--shadow);
-  border: 1px solid rgba(33,150,243,.12);
+  border: 1px solid rgba(184,150,62,.18);
 }
 .review-stars { color: var(--blue); font-size: 1rem; letter-spacing: 2px; margin-bottom: .75rem; }
 .review-text  { font-size: .9375rem; color: var(--text-light); font-style: italic; line-height: 1.7; margin-bottom: 1rem; }
