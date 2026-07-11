@@ -201,27 +201,19 @@ p:last-child { margin-bottom: 0; }
   background: var(--navy);
   box-shadow: 0 2px 16px rgba(0,0,0,.3);
 }
-/* At top of page over hero — darken text for legibility against the photo.
+/* At top of page over hero — keep white text but back it with a soft
+   scrim that fades out, so the photo still reaches the top of the page.
    Only applies on pages WITH a hero (not .no-hero). */
+body:not(.no-hero) .site-header.at-top {
+  background: linear-gradient(to bottom,
+    rgba(10, 20, 34, .78) 0%,
+    rgba(10, 20, 34, .45) 55%,
+    rgba(10, 20, 34, 0) 100%);
+  box-shadow: none;
+}
 body:not(.no-hero) .site-header.at-top .nav-logo-name,
-body:not(.no-hero) .site-header.at-top .nav-logo-pipe {
-  color: var(--navy);
-  transition: color .35s ease;
-}
-body:not(.no-hero) .site-header.at-top .nav-logo-city {
-  color: var(--blue-dark);
-  transition: color .35s ease;
-}
 body:not(.no-hero) .site-header.at-top .nav-links a:not(.btn-primary) {
-  color: var(--navy);
-  transition: color .2s, background .2s;
-}
-body:not(.no-hero) .site-header.at-top .nav-links a:not(.btn-primary):hover {
-  color: var(--navy);
-  background: rgba(30,58,95,.1);
-}
-body:not(.no-hero) .site-header.at-top .nav-toggle span {
-  background: var(--navy);
+  text-shadow: 0 1px 8px rgba(8, 16, 28, .5);
 }
 .nav-inner {
   display: flex;
