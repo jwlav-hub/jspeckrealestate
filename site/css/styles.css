@@ -455,7 +455,7 @@ body:not(.no-hero) .site-header.at-top .nav-links a:not(.btn-primary) {
 .hero-bg {
   position: absolute;
   inset: -4% -6%;   /* bleed so the flyover pan never exposes edges */
-  background-image: url('../images/hero-home2.jpg');
+  background-image: url('../images/hero-home3.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
