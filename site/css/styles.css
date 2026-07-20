@@ -455,9 +455,9 @@ body:not(.no-hero) .site-header.at-top .nav-links a:not(.btn-primary) {
 .hero-bg {
   position: absolute;
   inset: -4% -6%;   /* bleed so the flyover pan never exposes edges */
-  background-image: url('../images/hero-home3.png');
+  background-image: url('../images/hero-home4.png');
   background-size: cover;
-  background-position: center center;
+  background-position: 55% center;
   background-repeat: no-repeat;
   animation: hero-flyover 42s ease-in-out infinite alternate;
   will-change: transform;
